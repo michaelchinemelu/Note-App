@@ -1,0 +1,193 @@
+
+
+.container{
+  width: 100%;
+  height: 100vh;
+  color: rgb(255, 242, 242);
+  background:rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+
+.app{
+  width: 100%;
+  max-width: 460px;
+  height: 88vh;
+  margin: 0 auto;
+  background: rgb(32, 31, 31);
+  box-shadow: 6px 7px 10px rgba(0, 195, 255, 0.548);
+  position: relative;
+}
+
+.app-header{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 1rem 0px 1.5rem 2.5rem;
+letter-spacing: 0.8rem;
+color: rgb(228, 148, 0);
+}
+
+.note-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px 15px;
+}
+
+.note-title{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1rem 0px 1.5rem 0.6rem;
+  letter-spacing: 0.3rem;
+  color: rgb(26, 248, 219);
+  }
+
+  .note-count{
+    color:rgb(209, 161, 4);
+    font-size: 1.3arem;
+  }
+
+.bar{
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.left-button{
+  margin: 1rem 0rem 0rem 0.8rem;
+  fill: red;
+}
+.left-button > svg {
+  fill: white;
+  background: rgb(202, 186, 186);;
+}
+button, .delete{
+  background: transparent;
+  border: none;
+}
+
+button, .delete:hover{
+  width: 40px;
+  cursor: pointer;
+  fill: red;
+  transition: all 0.3s linear;
+}
+
+.left-button:hover{
+  padding-right: 15px;
+  width: 40px;
+  transition: all 0.5s linear;
+}
+
+.note-list{
+  padding: 0;
+  margin: 15px;
+  max-width: 100%;
+  line-height: 20px;
+  height: 59vh;
+  overflow-y: hidden;
+  color: rgb(219, 219, 219);
+  scrollbar-width: none;
+  background: rgba(37, 37, 44, 0.349);
+ 
+}
+
+.note-list::-webkit-scrollbar{
+  display: none;
+}
+strong{
+  margin: 4px;
+}
+
+.note-list-item{
+  font-size: 0.9rem;
+  margin-bottom: 13px;
+  padding: 8px 16px;
+  transition: all 0.5s ease-in;
+}
+
+.note-list-item:hover{
+   background-color: rgba(91, 230, 255, 0.096);
+   transition: all 0.5s linear;
+   padding: 3px 10px;
+}
+
+.note-list-item, p, span{
+  margin-right: 8px;
+}
+
+.note textarea{
+  background-color: rgb(27, 26, 26);
+  border: none;
+  padding: 16px 12px;
+  width: 100%;
+  height: 70vh;
+  resize: none;
+  scrollbar-width: none;
+}
+
+.note textarea:active,
+.note textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.note textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.note-header{
+  background: rgba(0, 0, 0, 0.171);
+  padding-bottom: 15px;
+}
+
+
+.add-note-icon {
+  padding-right: 15px;
+  background: transparent;
+  font-size: 48px;
+  position: absolute;
+  bottom: 24px;
+  right: 16px;
+  border: none;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-note-icon:hover{
+    width: 70px;
+    transition: all 0.2s linear;
+}
+
+ .button{
+  color: rgb(139, 3, 3);
+  border: 1px solid rgb(247, 6, 6);
+  border-radius: 10px;
+  width: 75px;
+  padding: 7px 0px  7px;
+  background:rgb(1, 217, 255);
+}
+
+.done-button {
+  border: none;
+}
+
+.done-button:hover{
+  font-size: 19px;
+  transition: all 0.3s linear;
+}
+
+.button:hover{
+  background: black;
+  color: orange;
+  border: 1px solid white;
+  transition: all 0.3s linear;
+}
+
+.date{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(162, 199, 199);
+  font-size: 0.8rem;
+}
